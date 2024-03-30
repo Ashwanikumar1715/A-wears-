@@ -1,0 +1,32 @@
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+    width: 37px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 12px rgb(163, 161, 161);
+    background: #f1f3f0;
+    color: #000;
+    z-index: 1;
+}
+@media screen and (max-width: 460px) {
+    .slick-arrow.slick-prev,
+.slick-arrow.slick-next{
+    width: 30px;
+    height: 60px;
+}
+    
+  }
+.slick-prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+.slick-next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}

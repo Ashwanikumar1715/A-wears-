@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #f1f3f6;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: medium;
+    font-weight: bolder
+   
+}
+
+/* hover navbar dropdown arrow */
+.arrow_down {
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  border-bottom: 11px solid #fff;
+}
+/* hover navbar dropdown arrow */
+
+/* login signup sidebar bg image */
+.loginSidebar {
+  background-image: url("../src/assets/images/loginimg.png");
+    background-position: center 85%;
+    background-repeat: no-repeat;
+}
+/* login signup sidebar bg image */
+
+.sm\:hidden {
+  display: none;
+}
+
+/* Styles for small screens (max-width: 640px in this example) */
+@media (max-width: 640px) {
+  .sm\:hidden {
+    display: block;
+  }
+
+  /* Add styles to position the toggled sidebar */
+  /* ... */
+}
